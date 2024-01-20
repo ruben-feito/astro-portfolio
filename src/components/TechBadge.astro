@@ -1,0 +1,64 @@
+---
+type TechBadgeProps = {
+  name: string
+  imgSrc: string
+  altSrc: string
+}
+
+const { name, imgSrc, altSrc } = Astro.props as TechBadgeProps
+---
+
+<div class='flex-container'>
+  <div class='circle-container'>
+    <img src={imgSrc} alt={altSrc} />
+  </div>
+  <div class='text-container'>
+    <span class='text'>{name}</span>
+  </div>
+</div>
+
+<style>
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 200ms ease-in-out;
+  }
+
+  .flex-container:hover {
+    transform: scale(1.05);
+  }
+
+  .circle-container {
+    display: flex;
+    height: 80px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* border: 1px solid var(--accent-regular); */
+    /* background-color: var( --accent-regular); */
+  }
+
+  .circle-container img {
+    height: 35px;
+    width: auto;
+    /* filter: drop-shadow(0 0 0.55rem #000); */
+  }
+
+  .text-container {
+    text-align: center;
+  }
+
+  .text {
+    font-size: 14px; /* Ajusta según sea necesario */
+    color: var(--accent-regular);
+  }
+
+  @media (min-width: 768px) {
+    .text {
+      font-size: 16px; /* Ajusta según sea necesario */
+    }
+  }
+</style>
