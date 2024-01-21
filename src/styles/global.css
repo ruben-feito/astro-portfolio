@@ -22,7 +22,8 @@
   --accent-regular: #f35322;
   /* --accent-dark: #1c0056; */
   --accent-dark: #f35322;
-  --accent-overlay: #f79999;
+  --accent-overlay: #df5126;
+  /* --accent-overlay: #f79898; */
   --accent-subtle-overlay: var(--accent-overlay);
   --accent-text-over: var(--gray-999);
 
