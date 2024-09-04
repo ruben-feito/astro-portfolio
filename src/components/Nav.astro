@@ -20,7 +20,11 @@ const iconLinks: {
 }[] = [
   // { label: 'Twitter', href: 'https://twitter.com/me', icon: 'twitter-logo' },
   // { label: 'Twitch', href: 'https://twitch.tv/me', icon: 'twitch-logo' },
-  { label: 'LinkedIN', href: 'https://www.linkedin.com/in/rubenfeitofraile/', icon: 'linkedin-logo' },
+  {
+    label: 'LinkedIN',
+    href: 'https://www.linkedin.com/in/rubenfeitofraile/',
+    icon: 'linkedin-logo',
+  },
   {
     label: 'GitHub',
     href: 'https://github.com/ruben-feito',
@@ -120,9 +124,9 @@ const iconLinks: {
         }
       </div>
 
-      <div class='theme-toggle'>
+      <!-- <div class='theme-toggle'>
         <ThemeToggle />
-      </div>
+      </div> -->
     </div>
   </div>
 </nav>
@@ -276,11 +280,11 @@ const iconLinks: {
     color: var(--accent-dark);
     transition: color var(--theme-transition);
   }
-  
+
   .social:focus {
     color: var(--accent-dark);
   }
-  .social:hover{
+  .social:hover {
     color: var(--accent-overlay);
   }
 
@@ -318,8 +322,8 @@ const iconLinks: {
       border-radius: 999rem;
       border: 0;
       padding: 0.5rem 0.5625rem;
-      background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
-      box-shadow: var(--shadow-md);
+      /* background: radial-gradient(var(--gray-900), var(--gray-800) 150%); */
+      /* box-shadow: var(--shadow-md); */
     }
 
     .nav-items::before {
