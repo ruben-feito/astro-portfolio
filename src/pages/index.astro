@@ -67,7 +67,7 @@ const projects = (await getCollection('work'))
 
       <section class='section with-background with-cta'>
         <header class='section-header stack gap-2 lg:gap-8'>
-          <h3 id="experience">Experiencia Laboral</h3>
+          <h2 id="experience">Experiencia Laboral</h2>
         </header>
 
         <div class='gallery'>
@@ -125,7 +125,7 @@ const projects = (await getCollection('work'))
         <Grid variant='small'> 
           {
             technologies.map((tech: TechBadgeProps) => (
-              <a
+              <li><a
                 href={tech.link}
                 target="_blank"
                 class='cursor-pointer text-gray-300'
@@ -133,7 +133,7 @@ const projects = (await getCollection('work'))
                 style={{ textDecoration: 'none' }}}
               >
                 <TechBadge {...tech} />
-              </a>
+              </a></li>
             ))
           }
           </Grid>
@@ -142,7 +142,7 @@ const projects = (await getCollection('work'))
           <Grid variant='small'> 
             {
               bbdd.map((bd: TechBadgeProps) => (
-                <a
+              <li><a
                   href={bd.link}
                   target="_blank"
                   class='cursor-pointer text-gray-300'
@@ -150,7 +150,7 @@ const projects = (await getCollection('work'))
                   style={{ textDecoration: 'none' }}}
                 >
                   <TechBadge {...bd} />
-                </a>
+                </a></li>
               ))
             }
             </Grid>
@@ -159,7 +159,7 @@ const projects = (await getCollection('work'))
              <Grid variant='small'> 
                {
                  otros.map((other: TechBadgeProps) => (
-                   <a
+                 <li><a
                      href={other.link}
                      target="_blank"
                      class='cursor-pointer text-gray-300'
@@ -167,7 +167,7 @@ const projects = (await getCollection('work'))
                      style={{ textDecoration: 'none' }}}
                    >
                      <TechBadge {...other} />
-                   </a>
+                   </a></li>
                  ))
                }
                </Grid>
