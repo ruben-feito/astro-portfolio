@@ -80,7 +80,6 @@ import Icon from './Icon.astro'
           'theme-dark',
         )
         //always dark mode
-        document.documentElement.classList.add('theme-dark')
         button.setAttribute('aria-pressed', String(dark))
       }
 
@@ -88,11 +87,11 @@ import Icon from './Icon.astro'
       button.addEventListener('click', () => setTheme(!this.isDark()))
 
       // Initialize button state to reflect current theme.
-      setTheme(this.isDark())
+      setTheme(true)
     }
 
     isDark() {
-      return document.documentElement.classList.contains('theme-dark')
+      return true
     }
   }
   customElements.define('theme-toggle', ThemeToggle)
