@@ -1,7 +1,7 @@
 const technologies = [
   {
     name: 'PHP',
-    imgSrc: 'https://www.php.net//images/logos/new-php-logo.svg',
+    imgSrc: 'https://www.php.net/images/logos/new-php-logo.svg',
     altSrc: 'PHP Logo',
     link: 'https://www.php.net/',
     ariaLink: 'PHP Documentation Website',
