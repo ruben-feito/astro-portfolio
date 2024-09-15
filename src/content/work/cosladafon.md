@@ -27,7 +27,7 @@ tags:
 url: https://cosladafon.es
 ---
 
-Se trata de una web de venta de telefonía movil nueva y de reacondicionados. La
+Se trata de una web de venta de telefonía móvil nueva y de reacondicionados. La
 web muestra la información de los productos y permite la compra de los mismos.
 
 Partiendo de un diseño propio de la empresa, el proyecto se ha realizado con el
@@ -45,7 +45,7 @@ su plataforma. La gran mayoría de estas integraciones han sido realizadas por
 mi.
 
 También se he realizado una integración con el sistema con WordPress para poder
-mostrar entradas de un blog en la web, videos de YouTube y resenas de Google.
+mostrar entradas de un blog en la web, videos de YouTube y reseñas de Google.
 
 la web tiene un panel de administración donde se pueden gestionar los pedidos,
 los clientes, los productos, las categorías, las marcas, los banners y etc.
