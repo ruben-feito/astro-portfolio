@@ -1,0 +1,73 @@
+---
+import Grid from "./Grid.astro";
+import TechBadge from "./TechBadge.astro";
+import { technologies, bbdd, otros } from '../utils/data'
+
+type TechBadgeProps = {
+  name: string
+  imgSrc: string
+  altSrc: string
+  link: string
+  ariaLink: string
+}
+
+---
+
+<section class='section with-background with-cta'>
+    <header class='section-header stack gap-2 lg:gap-5'>
+      <h2 id="technologies">Tecnologías</h2>
+      <p class="text-lg">Actualmente, mi enfoque principal está en el desarrollo con PHP, utilizando Laravel como framework clave para crear soluciones eficientes y escalables. Siempre busco optimizar mis habilidades y proyectos dentro de este stack, manteniendo un enfoque en las mejores prácticas y la calidad del código. Además, disfruto aprendiendo nuevos lenguajes de programación y frameworks, especialmente en tecnologías JavaScript, para estar al día con las últimas tendencias tecnológicas.</p>
+    </header>
+
+    <div class='gallery'>
+
+    <Grid variant='small'> 
+      {
+        technologies.map((tech: TechBadgeProps) => (
+          <li><a
+            href={tech.link}
+            target="_blank"
+            class='cursor-pointer text-gray-300'
+            aria-label={tech.ariaLink}
+            style={{ textDecoration: 'none' }}}
+          >
+            <TechBadge {...tech} />
+          </a></li>
+        ))
+      }
+      </Grid>
+        <p class="text-lg pt-10">Tengo un sólido manejo de bases de datos relacionales (SQL), lo que me permite diseñar y optimizar estructuras de datos de manera eficiente. Además, cuento con conocimientos de bases de datos NoSQL, lo que me brinda la flexibilidad de adaptarme a proyectos que requieren enfoques de almacenamiento no relacional.</p>
+      <Grid variant='small'> 
+        {
+          bbdd.map((bd: TechBadgeProps) => (
+          <li><a
+              href={bd.link}
+              target="_blank"
+              class='cursor-pointer text-gray-300'
+              aria-label={bd.ariaLink}
+              style={{ textDecoration: 'none' }}}
+            >
+              <TechBadge {...bd} />
+            </a></li>
+          ))
+        }
+        </Grid>
+
+        <p class="text-center text-lg pt-10">Manejo diversas herramientas para control de versiones, gestión de servidores, desarrollo, testing y diseño, lo que me permite optimizar mi flujo de trabajo y colaborar de manera efectiva en distintos proyectos.</p>
+         <Grid variant='small'> 
+           {
+             otros.map((other: TechBadgeProps) => (
+             <li><a
+                 href={other.link}
+                 target="_blank"
+                 class='cursor-pointer text-gray-300'
+                 aria-label={other.ariaLink}
+                 style={{ textDecoration: 'none' }}}
+               >
+                 <TechBadge {...other} />
+               </a></li>
+             ))
+           }
+           </Grid>
+    </div>
+  </section>

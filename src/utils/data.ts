@@ -87,25 +87,25 @@ const technologies = [
     ariaLink: 'Astro Documentation Website',
   },
   {
-    name: 'Node.js',
-    imgSrc: 'https://www.svgrepo.com/show/452075/node-js.svg',
-    altSrc: 'Node.js Logo',
-    link: 'https://nodejs.org/en/',
-    ariaLink: 'Node.js Documentation Website',
-  },
-  {
     name: 'Next.js',
     imgSrc: 'https://www.svgrepo.com/show/306466/next-dot-js.svg',
     altSrc: 'Next.js Logo',
     link: 'https://nextjs.org/',
     ariaLink: 'Next.js Documentation Website',
   },
+  {
+    name: 'Node.js',
+    imgSrc: 'https://www.svgrepo.com/show/452075/node-js.svg',
+    altSrc: 'Node.js Logo',
+    link: 'https://nodejs.org/en/',
+    ariaLink: 'Node.js Documentation Website',
+  },
 ]
 
 const bbdd = [
   {
     name: 'MySQL',
-    imgSrc: 'https://www.vectorlogo.zone/logos/mysql/mysql-official.svg',
+    imgSrc: 'https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg',
     altSrc: 'MySQL Logo',
     link: 'https://www.mysql.com/',
     ariaLink: 'MySQL Documentation Website',
@@ -116,6 +116,13 @@ const bbdd = [
     altSrc: 'MariaDB Logo',
     link: 'https://mariadb.org/',
     ariaLink: 'MariaDB Documentation Website',
+  },
+  {
+    name: 'PostgreSQL',
+    imgSrc: 'https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg',
+    altSrc: 'PostgreSQL Logo',
+    link: 'https://www.postgresql.org/',
+    ariaLink: 'PostgreSQL Documentation Website',
   },
   {
     name: 'Oracle PL/SQL',

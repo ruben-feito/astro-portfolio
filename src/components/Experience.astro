@@ -1,0 +1,132 @@
+---
+import Tag from './Tag.astro'
+---
+
+<section class='section with-background with-cta'>
+  <header class='section-header stack gap-2 lg:gap-8'>
+    <h2 id='experience'>Experiencia Laboral</h2>
+  </header>
+
+  <div class='gallery'>
+    <ol class='relative border-s border-gray-200 dark:border-gray-700'>
+      <li class='mb-10 ms-4'>
+        <div
+          class='absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700'
+        >
+        </div>
+        <time
+          class='mb-1 text-lg font-normal leading-none text-gray-400 dark:text-gray-500'
+          >Diciembre de 2020 - Actualmente</time
+        >
+        <h3 class='text-xl font-semibold'>
+          Sitelicon Ecommerce Services – FullStack Developer
+        </h3>
+        <p class='text-base font-normal'>
+          Análisis de requisitos colaborando con cliente final en su definición,
+          diseño de soluciones y diagnóstico de incidencias.
+        </p>
+        <p class='text-base font-normal'>
+          Participación en desarrollo y mantenimiento de Webs Dinámicas.
+          Aplicaciones Web, ERPs, CRMs y Landings.
+        </p>
+        <p class='text-base font-normal'>
+          Back End con <b>PHP</b> en Laravel y Codeigniter. En menor medida con con
+          Node.js.
+        </p>
+        <p class='text-base font-normal'>
+          Front End con <b>HTML</b>, Laravel Blade, <b>CSS</b> (SASS), <b
+            >Bootstrap</b
+          > y <b>Tailwind</b>. En menor medida con <b>JS</b> en React, Astro.js y
+          Next.js.
+        </p>
+        <p class='text-base font-normal'>
+          Proyectos con control de versiones con Git y AWS CodeCommit.
+        </p>
+        <p class='text-base font-normal'>
+          BBDD relacionales MySQL y MariaDB. En menor medida MongoDB.
+        </p>
+        <p class='text-base font-normal'>
+          Optimización Web usando PageSpeed y Lighthouse.
+        </p>
+        <p class='text-base font-normal'>
+          Creación de API RESTful propias e integraciones de terceros incluidos
+          marketplaces.
+        </p>
+        <p class='text-base font-normal'>
+          Colaboración con otros departamentos operacionales en el ciclo de
+          vida: Diseño, Marketing, Contabilidad…
+        </p>
+        <p class='text-base font-normal'>
+          Creación, seguimiento y supervisión de los proyectos del equipo.
+        </p>
+        <p class='text-base font-normal'>
+          Orientador y formador de nuevo personal y en prácticas.
+        </p>
+        <div class='roles'>
+          <Tag>Desarrollo FullStack</Tag>
+          <Tag>PHP</Tag>
+          <Tag>Gestión de Proyectos</Tag>
+          <Tag>Liderazgo de equipos</Tag>
+        </div>
+        <path
+          stroke='currentColor'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          stroke-width='2'
+          d='M1 5h12m0 0L9 1m4 4L9 9'></path>
+      </li>
+
+      <li class='mb-10 ms-4'>
+        <div
+          class='absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700'
+        >
+        </div>
+        <time
+          class='mb-1 text-lg font-normal leading-none text-gray-400 dark:text-gray-500'
+          >Abril de 2020 - Junio de 2020</time
+        >
+        <h3 class='text-xl font-semibold'>
+          Bankinter – Consultor Business Intelligence
+        </h3>
+        <p class='text-base font-normal'>
+          Desarrollar Datawarehouse (DWH) y construcción de modelos Business
+          Intelligence.
+        </p>
+        <p class='text-base font-normal'>
+          Creación y actualización de ETLs con IBM InfoSphere <b>DataStage</b> y
+          RPDs con <b>Oracle Administrator</b>.
+        </p>
+        <p class='text-base font-normal'>
+          Realización de informes por medio de Oracle Business Intelligence
+          Enterprise Edition (OBIEE).
+        </p>
+        <p class='text-base font-normal'>
+          BBDD relacionales deSQL Oracle Developer usando <b>PL/SQL</b>.
+        </p>
+        <div class='roles'>
+          <Tag>BBDD</Tag>
+        </div>
+        <path
+          stroke='currentColor'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          stroke-width='2'
+          d='M1 5h12m0 0L9 1m4 4L9 9'></path>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<style>
+  .roles {
+    display: none;
+  }
+
+  @media (min-width: 50em) {
+    .roles {
+      margin-top: 0.5rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+</style>
