@@ -1,4 +1,6 @@
 ---
+import Image from 'astro/components/Image.astro'
+
 type TechBadgeProps = {
   name: string
   imgSrc: string
@@ -10,7 +12,13 @@ const { name, imgSrc, altSrc } = Astro.props as TechBadgeProps
 
 <div class='flex-container'>
   <div class='circle-container'>
-    <img src={imgSrc} alt={altSrc} />
+    <Image
+      src={imgSrc}
+      alt={altSrc}
+      width='100'
+      height='100'
+      style={{ margin: '0 auto' }}
+    />
   </div>
   <div class='text-container'>
     <span class='text'>{name}</span>
