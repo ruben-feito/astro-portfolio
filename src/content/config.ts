@@ -11,6 +11,7 @@ export const collections = {
       img: z.string(),
       img_alt: z.string().optional(),
       url: z.string(),
+      url_extra: z.string().optional(),
     }),
   }),
 }
